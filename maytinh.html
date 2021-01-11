@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+</head>
+<body>
+<form>
+    <input type="num" id="sothunhat">
+    <input type="num" id="sothuhai"> <br/>
+    <button type="button" onclick="add();">add</button>
+    <button type="button" onclick="sub();">sub</button>
+    <button type="button" onclick="multi();">multi</button>
+    <button type="button" onclick="div();">div</button>
+</form>
+</body>
+<script>
+    let a = document.getElementById("sothunhat");
+    let b = document.getElementById("sothuhai");
+    let result = 0;
+
+    function add() {
+        result = parseInt(a.value) + parseInt(b.value);
+        document.write("ket qua la " + result);
+    }
+
+    function sub() {
+        result = parseInt(a.value) - parseInt(b.value);
+        document.write("ket qua la" + result);
+    }
+
+    function multi() {
+        result = parseInt(a.value) * parseInt(b.value);
+        document.write("ket qua la " + result);
+    }
+
+    function div() {
+        result = parseInt(a.value) / parseInt(b.value);
+        document.write("ket qua la" + result);
+    }
+</script>
+</html>
